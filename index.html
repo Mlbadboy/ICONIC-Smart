@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ICONIC SMART — Smart Electronics for Every Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet" />
+  <style>
+    :root { --brand:#0066cc; --brand2:#3b82f6; --text:#0f172a; --muted:#64748b; --border:#e2e8f0; }
+    *{box-sizing:border-box;margin:0;padding:0} body{font-family:Outfit,sans-serif;color:var(--text)}
+    .container{width:min(1200px,100% - 2rem);margin:auto}
+    .top-bar{background:#f8fafc;border-bottom:1px solid var(--border);padding:.65rem;text-align:center;font-size:.85rem}
+    .navbar{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--border);z-index:10}
+    .nav-wrap{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:74px}
+    .logo-img{height:38px}.nav-links{display:flex;list-style:none;gap:1.2rem}.nav-links a{text-decoration:none;color:#334155;font-weight:500}
+    .nav-right{display:flex;align-items:center;gap:.75rem}.nav-phone{font-size:.8rem;color:var(--muted)}
+    .btn{border:none;border-radius:999px;padding:.7rem 1rem;background:linear-gradient(135deg,var(--brand),var(--brand2));color:#fff;font-weight:700;text-decoration:none}
+    .mobile-toggle{display:none;border:1px solid var(--border);background:#fff;border-radius:10px;width:40px;height:40px}
+    .hero{padding:4rem 0;background:linear-gradient(to bottom,#f8fbff,#fff)}.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:2rem;align-items:center}
+    h1{font-family:'Bebas Neue';font-size:clamp(2.8rem,8vw,6rem);line-height:.9} h1 em{display:block;font-style:normal;color:var(--brand)}
+    .grid-3{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem}.card{border:1px solid var(--border);border-radius:18px;overflow:hidden}
+    .card img{width:100%;aspect-ratio:4/3;object-fit:cover}.card-body{padding:1rem}.muted{color:var(--muted)}
+    .footer{background:#f5f5f5;border-top:1px solid #e5e5e5;padding:70px 0 30px}.foot-g{display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:34px;margin-bottom:40px}
+    .foot-logo-img{height:40px;margin-bottom:16px}.foot-about,.foot-info,.foot-col a{font-size:13px;color:#6b7280;text-decoration:none}
+    .foot-col h5{font-size:10px;letter-spacing:2px;color:#0066CC;margin-bottom:14px}.foot-col ul{list-style:none;display:flex;flex-direction:column;gap:8px}
+    .foot-soc{display:flex;gap:10px;margin-top:16px}.soc-btn{width:36px;height:36px;border-radius:10px;border:1px solid #e5e5e5;display:flex;align-items:center;justify-content:center;background:#fff;text-decoration:none}
+    .foot-bot{border-top:1px solid #e5e5e5;padding-top:20px;display:flex;justify-content:space-between;gap:10px;flex-wrap:wrap}.fbadges{display:flex;gap:8px;flex-wrap:wrap}.fbadge{font-size:11px;padding:3px 10px;border:1px solid #e5e5e5;border-radius:999px}
+    @media(max-width:960px){.nav-links{display:none}.mobile-toggle{display:block}.nav-wrap[data-open=true] .nav-links{display:flex;position:absolute;top:74px;left:1rem;right:1rem;background:#fff;border:1px solid var(--border);border-radius:12px;padding:1rem;flex-direction:column}.hero-grid,.grid-3{grid-template-columns:1fr 1fr}.foot-g{grid-template-columns:1fr 1fr}}
+    @media(max-width:700px){.hero-grid,.grid-3,.foot-g{grid-template-columns:1fr}.nav-phone{display:none}}
+  </style>
+</head>
+<body>
+  <div class="top-bar">✨ Free shipping on orders over ₹40,000 | 2-year warranty on all products ✨</div>
+  <header class="navbar">
+    <div class="container nav-wrap" id="navWrap">
+      <img class="logo-img" src="https://static.wixstatic.com/media/e9c4a3_88b07323f9e7476fb04761be7b93db57~mv2.png" alt="Iconic Smart">
+      <ul class="nav-links">
+        <li><a href="#categories">Categories</a></li><li><a href="#featured">Products</a></li><li><a href="#why">Why Us</a></li>
+        <li><a href="https://www.iconicsmart.in/aboutus" target="_blank">About</a></li>
+        <li><a href="https://www.iconicsmart.in/blank" target="_blank">Contact</a></li>
+      </ul>
+      <div class="nav-right"><div class="nav-phone">Toll Free <b>1800 202 3667</b></div><a class="btn" href="https://www.iconicsmart.in/category/all-products" target="_blank">Shop Now</a><button class="mobile-toggle" id="menuBtn">☰</button></div>
+    </div>
+  </header>
+  <main class="container" style="padding:3rem 0">
+    <section class="hero"><div class="container hero-grid"><div><h1>ICONIC <em>SMART</em></h1><p class="muted">Premium layout while preserving your original live-site header/footer structure and brand content.</p></div><img src="https://static.wixstatic.com/media/fbffc6_1fb31db2760e418cb408d6fc4003dbf2~mv2.png" style="width:100%;max-width:420px;justify-self:center"></div></section>
+    <section id="categories" style="padding:3rem 0"><div class="grid-3"><article class="card"><img src="https://cdn.corenexis.com/files/c/1586849720.png"><div class="card-body"><h3>Smart LED TV</h3></div></article><article class="card"><img src="https://cdn.corenexis.com/files/c/5653155720.png"><div class="card-body"><h3>Air Cooler</h3></div></article><article class="card"><img src="https://static.wixstatic.com/media/e9c4a3_1e97670eac25496b865b3d37101d860a~mv2.png"><div class="card-body"><h3>Washing Machine</h3></div></article></div></section>
+  </main>
+  <footer class="footer"><div class="container"><div class="foot-g"><div><img class="foot-logo-img" src="https://static.wixstatic.com/media/e9c4a3_88b07323f9e7476fb04761be7b93db57~mv2.png" alt="Iconic Smart"/><p class="foot-about">Iconic Smart delivers premium electronics to every Indian household — smart TVs, air coolers and washing machines built to last.</p><div class="foot-info">Toll Free: <b>1800 202 3667</b><br>Email: <b>info@iconicsmart.in</b><br>Plot 3A, Block-A, Sector-81, Noida — 201305<br>A-112 UrbTech Trade Centre, Sec-132, Noida</div><div class="foot-soc"><a class="soc-btn" href="https://www.instagram.com/the_iconic_smart/" target="_blank">📷</a><a class="soc-btn" href="https://www.facebook.com/WixStudio" target="_blank">f</a><a class="soc-btn" href="https://www.linkedin.com/company/iconic-smart" target="_blank">in</a><a class="soc-btn" href="https://twitter.com/WixStudio" target="_blank">𝕏</a></div></div><div class="foot-col"><h5>Categories</h5><ul><li><a href="https://www.iconicsmart.in/category/led-tv" target="_blank">Smart LED TV</a></li><li><a href="https://www.iconicsmart.in/category/air-cooler" target="_blank">Air Cooler</a></li><li><a href="https://www.iconicsmart.in/category/washing-machine" target="_blank">Washing Machine</a></li><li><a href="https://www.iconicsmart.in/category/all-products" target="_blank">All Products</a></li></ul></div><div class="foot-col"><h5>Company</h5><ul><li><a href="https://www.iconicsmart.in/aboutus" target="_blank">About Us</a></li><li><a href="https://www.iconicsmart.in/blank" target="_blank">Contact</a></li><li><a href="https://www.iconicsmart.in/shipping" target="_blank">Shipping Policy</a></li><li><a href="https://www.iconicsmart.in/cancellation" target="_blank">Cancellation & Refund</a></li></ul></div><div class="foot-col"><h5>Support</h5><ul><li><a href="https://www.iconicsmart.in/policy" target="_blank">Privacy Policy</a></li><li><a href="https://www.iconicsmart.in/terms" target="_blank">Terms & Conditions</a></li><li><a href="https://www.iconicsmart.in/contactus" target="_blank">Contact Us</a></li></ul></div></div><div class="foot-bot"><p>© 2025 Iconic Smart — VEIRA ELETRONICS Pvt Ltd | DALTON INNOVATION Pvt Ltd | DALTON ELECTROTECH Pvt Ltd</p><div class="fbadges"><span class="fbadge">Secured Payments</span><span class="fbadge">1-Year Warranty</span><span class="fbadge">Pan-India Delivery</span></div></div></div></footer>
+  <script>const navWrap=document.getElementById('navWrap');const menuBtn=document.getElementById('menuBtn');menuBtn?.addEventListener('click',()=>{const o=navWrap.dataset.open==='true';navWrap.dataset.open=(!o).toString();menuBtn.textContent=o?'☰':'✕';});</script>
+</body></html>
